@@ -1,0 +1,199 @@
+body {
+  margin: 10px auto;
+  padding: 10px auto;
+}
+
+.countainer-main {
+  margin: 10px auto;
+  padding: 10px auto;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 20%;
+  margin: 10px auto;
+  top: 20px;
+  left: -100px;
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.blocks {
+  position: relative;
+  top: 150px;
+}
+#login::placeholder {
+  color: grey;
+  font-size: 20px;
+  position: relative;
+  left: 110px;
+}
+
+#password::placeholder {
+  color: grey;
+  font-size: 20px;
+  position: relative;
+  left: 95px;
+}
+
+#email::placeholder {
+  color: grey;
+  font-size: 20px;
+  position: relative;
+  left: 110px;
+}
+.login {
+  position: relative;
+  border-style: none none none solid;
+  border-left-width: 5px;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.password {
+  border-style: none none none solid;
+  border-left-width: 5px;
+  text-align: center;
+}
+
+.emailinput {
+  border-style: none none none solid;
+  border-left-width: 5px;
+}
+
+.bottom {
+  margin: 0;
+  width: 275px;
+  height: 75px;
+  background-size: 100%;
+  background: linear-gradient(
+    45deg,
+    rgb(27, 212, 236) 50%,
+    rgb(87, 161, 230) 25%,
+    rgb(39, 211, 241) 50%,
+    rgba(87, 111, 230, 1) 25%
+  );
+  animation: animate 10s ease infinite;
+}
+
+.bottommy {
+  position: relative;
+  top: -50px;
+  font-size: 25px;
+  border-radius: 60px;
+  border-color: white;
+  left: 110px;
+  width: 275px;
+  height: 75px;
+  display: flex;
+  border-radius: 60px;
+  background-size: 100%;
+  background-image: linear-gradient(
+    270deg,
+    rgb(27, 212, 236) 0%,
+    rgb(87, 161, 230) 25%,
+    rgb(39, 211, 241) 0%
+  );
+  animation: AnimateBG 5s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+h1 {
+  position: relative;
+  top: -100px;
+  color: black;
+}
+
+.bottom:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 60px;
+  transition: all 1s ease;
+}
+
+.bottom:hover:before {
+  width: 100%;
+}
+
+.label-box {
+  position: relative;
+  width: 270px;
+}
+
+.label-box::before,
+.label-box::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  background-color: #757575;
+  transition: width 0.2s;
+}
+
+.label-box::before {
+  left: 50%;
+}
+
+.label-box::after {
+  right: 50%;
+}
+
+input:focus ~ .label-box::before,
+input:focus ~ .label-box::after {
+  width: 50%;
+}
+
+input {
+  width: 270px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+label {
+  position: absolute;
+  top: -36px;
+  font-size: 18px;
+  pointer-events: none;
+  color: #757575;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ .label-box label,
+input:valid ~ .label-box label {
+  font-size: 14px;
+  transform: translateY(-20px);
+}
+
+.block-yuri {
+  display: block;
+  padding: 20px 0;
+  /* margin: 235px 0 0 0; УДАЛИТЬ!*/
+  position: relative;
+  height: 100px;
+  width: 1000px;
+  top: 100px;
+}

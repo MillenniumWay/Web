@@ -1,0 +1,14 @@
+.footer-block {
+  display: block;
+  height: 300px;
+  width: 800px;
+  background-color: aliceblue;
+  margin: auto;
+  border-radius: 60px;
+}
+
+.form-for-connect {
+  position: relative;
+  top: 50px;
+  right: -100px;
+}
